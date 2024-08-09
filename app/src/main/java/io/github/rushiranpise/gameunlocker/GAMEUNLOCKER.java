@@ -1,4 +1,4 @@
-package io.github.senyxlois.appspoofer;
+package io.github.rushiranpise.gameunlocker;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
