@@ -16,7 +16,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
 @SuppressLint("DiscouragedPrivateApi")
 @SuppressWarnings("ConstantConditions")
-public class appspoofer implements IXposedHookLoadPackage {
+public class GAMEUNLOCKER implements IXposedHookLoadPackage {
 
     private static final String TAG = appspoofer.class.getSimpleName();
     // Packages to Spoof as ROG Phone 6
