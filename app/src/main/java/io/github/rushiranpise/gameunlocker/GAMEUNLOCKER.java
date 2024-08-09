@@ -18,7 +18,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
 @SuppressWarnings("ConstantConditions")
 public class GAMEUNLOCKER implements IXposedHookLoadPackage {
 
-    private static final String TAG = appspoofer.class.getSimpleName();
+    private static final String TAG = GAMEUNLOCKER.class.getSimpleName();
     // Packages to Spoof as ROG Phone 6
     private static final String[] packagesToChangeROG6 = {
         "com.activision.callofduty.shooter",
