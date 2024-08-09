@@ -22,6 +22,7 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
     // Packages to Spoof as ROG Phone 6
     private static final String[] packagesToChangeROG6 = {
         "com.activision.callofduty.shooter",
+        "com.netease.newspike",
         "com.activision.callofudty.warzone",
         "com.ea.gp.fifamobile",
         "com.gameloft.android.ANMP.GloftA9HM",
@@ -64,9 +65,7 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         "com.pubg.imobile",
         "com.pubg.krmobile",
         "com.rekoo.pubgm",
-        "com.netease.newspike",
         "com.levelinfinite.sgameGlobal",
-        "com.netease.newspike",
         "com.riotgames.league.wildrift",
         "com.riotgames.league.wildrifttw",
         "com.riotgames.league.wildriftvn",
