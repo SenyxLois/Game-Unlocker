@@ -27,7 +27,8 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         "com.gameloft.android.ANMP.GloftA9HM",
         "com.madfingergames.legends",
         "com.pearlabyss.blackdesertm",
-        "com.pearlabyss.blackdesertm.gl"
+        "com.pearlabyss.blackdesertm.gl",
+        "com.garena.game.codm"
     };
 
     // Packages to Spoof as Xperia 5
@@ -58,12 +59,13 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
 
     // Packages to Spoof as Xiaomi 14 Pro
     private static final String[] packagesToChangeMI14P = {
-        "com.levelinfinite.sgameGlobal",
         "com.tencent.tmgp.sgame",
         "com.netease.lztgglobal",
         "com.pubg.imobile",
         "com.pubg.krmobile",
         "com.rekoo.pubgm",
+        "com.netease.newspike",
+        "com.levelinfinite.sgameGlobal"
         "com.netease.newspike",
         "com.riotgames.league.wildrift",
         "com.riotgames.league.wildrifttw",
@@ -79,7 +81,6 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         "com.mojang.minecraftpe",
         "com.YoStar.AetherGazer",
         "com.mobile.legends",
-        "com.garena.game.codm",
         "com.tencent.tmgp.kr.codm",
         "com.vng.codmvn",
         "com.garena.game.kgvn"
@@ -113,6 +114,11 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         if (Arrays.asList(packagesToChangeROG6).contains(packageName)) {
             propsToChangeROG6();
             XposedBridge.log("Spoofed " + packageName + " as Asus ROG 6");
+        }
+
+        if (Arrays.asList(packagesToChangeIP15PRO).contains(packageName)) {
+            propsToChangeIP15PRO();
+            XposedBridge.LOG("Spoofed " + packageName + "as iPhone 15 Pro [DEBUG]")
         }
 
         // Black Shark
