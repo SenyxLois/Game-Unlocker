@@ -116,11 +116,6 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
             XposedBridge.log("Spoofed " + packageName + " as Asus ROG 6");
         }
 
-        if (Arrays.asList(packagesToChangeIP15PRO).contains(packageName)) {
-            propsToChangeIP15PRO();
-            XposedBridge.LOG("Spoofed " + packageName + "as iPhone 15 Pro [DEBUG]")
-        }
-
         // Black Shark
         if (Arrays.asList(packagesToChangeBS4).contains(packageName)) {
             propsToChangeBS4();
